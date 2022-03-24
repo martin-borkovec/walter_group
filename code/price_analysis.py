@@ -1,4 +1,7 @@
 #%%
+from data_preparation import dat 
+
+#%%
 (
     dat
     .query('ang_VONLAND == "AT"') # query equals filter in Pandas
@@ -8,3 +11,4 @@
     .reset_index() 
     .set_axis(["Type", "averagePrice"], axis = 1, inplace = False)
 )
+
